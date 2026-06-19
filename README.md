@@ -23,16 +23,15 @@ Configuration lives in `/etc/default/gpstak`:
 Build packages:
 
 ```sh
-make deb
+make package
 ```
 
 The Debian package installs:
 
-- `/usr/local/bin/gpstak`
+- `/usr/bin/gpstak`
 - `/etc/default/gpstak`
 - `/lib/systemd/system/gpstak.service`
 
 ## License
 
 Apache-2.0.
-

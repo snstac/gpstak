@@ -10,4 +10,6 @@ out/
 .pytest_cache/
 .ruff_cache/
 .venv/
-
+.venv-test/
+*.egg-info/
+deb_dist/

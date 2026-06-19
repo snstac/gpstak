@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+  remove|deconfigure)
+    if command -v systemctl >/dev/null 2>&1; then
+      systemctl disable --now gpstak.service 2>/dev/null || true
+    fi
+    ;;
+esac
+
+exit 0
+
